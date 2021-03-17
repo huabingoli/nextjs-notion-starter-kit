@@ -49,7 +49,7 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter />
+            {/* <FaTwitter /> */}
           </a>
         )}
 
@@ -61,7 +61,7 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaGithub />
+            {/* <FaGithub /> */}
           </a>
         )}
 
@@ -73,7 +73,7 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin />
+            {/* <FaLinkedin /> */}
           </a>
         )}
       </div>
