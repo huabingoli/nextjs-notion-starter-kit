@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, Faweibo } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaWeibo } from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
 import * as config from 'lib/config'
 
@@ -41,6 +41,18 @@ export const Footer: React.FC<{
       ) : null}
 
       <div className={styles.social}>
+        {config.weibo && (
+          <a
+            className={styles.weibo}
+            href={`https://www.weibo.com/in/${config.weibo}`}
+            title={`Weibo ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaWeibo />
+          </a>
+        )}
+
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -49,7 +61,7 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            {/* <FaTwitter /> */}
+            <FaTwitter />
           </a>
         )}
 
@@ -61,21 +73,10 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            {/* <FaGithub /> */}
+            <FaGithub />
           </a>
         )}
 
-        {config.weibo && (
-          <a
-            className={styles.weibo}
-            href={`https://www.weibo.com/in/${config.weibo}`}
-            title={`Weibo ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            {/* <FaWeibo /> */}
-          </a>
-        )}
       </div>
     </footer>
   )
