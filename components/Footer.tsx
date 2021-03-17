@@ -44,7 +44,7 @@ export const Footer: React.FC<{
         {config.weibo && (
           <a
             className={styles.weibo}
-            href={`https://www.weibo.com/in/${config.weibo}`}
+            href={`https://www.weibo.com/${config.weibo}`}
             title={`Weibo ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
